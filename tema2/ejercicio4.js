@@ -13,7 +13,9 @@ function numsImparDeVeces(array) {
     if (contador % 2 !== 0) {
       //comprobar si es impar las veces que sale el numero
       numerosRep.push(array[i]);
+      //acabar
     }
   }
+  return numerosRep;
 }
-console.log(numsImparDeVeces([1, 2, 3, 4, 2])); //sale undefined. arreglar!!!!!!!!!!
+console.log(numsImparDeVeces([1, 2, 3, 4, 2]));
