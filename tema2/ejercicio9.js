@@ -4,9 +4,20 @@ descendente. Esencialmente, reordenar los dígitos para crear el
 mayor número posible.
 */
 
-function devolverOrdenDescendente(numero){
-    numero.toString().split("");
+function devolverOrdenDescendente(numero) {
+  let numerosOrdenAscendente = numero.toString().split("");
+  numerosOrdenAscendente.sort();
+ //numerosOrdenAscendente.reverse();
+
+  let ordenados = 0;
+
+  for (let i = numerosOrdenAscendente.length - 1; i >= 0; i--) {
+    ordenados += numerosOrdenAscendente[i];
+  }
+
+  return parseInt(ordenados);
 }
 function compareFn(a, b) {
-  b-a; //orden descendente
+  b - a; //orden descendente
 }
+console.log(devolverOrdenDescendente(1432567891));
