@@ -16,14 +16,10 @@ function numeroMenosRepetido(array) {
         vecesMenosRepetido++;
       }
     }
-    if (vecesMenosRepetido < menorRepeticiones) {
-      menorRepeticiones = vecesMenosRepetido;
+    if ( vecesMenosRepetido < menorRepeticiones ||  (vecesMenosRepetido === menorRepeticiones && array[i] < numeroMenosRepetido))
       // Si aparece menos veces que el número que tenía guardado
       // O si aparece las mismas veces pero es un número más pequeño
-      vecesMenosRepetido < menorRepeticiones ||
-      (vecesMenosRepetido === menorRepeticiones &&
-        array[i] < numeroMenosRepetido)
-    ) {
+      {
       menorRepeticiones = vecesMenosRepetido; // Actualizo el numero de menor numero de repeticiones
       numeroMenosRepetido = array[i];
     }
