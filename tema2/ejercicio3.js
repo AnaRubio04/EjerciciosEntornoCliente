@@ -4,14 +4,14 @@ empate devuelve el número más pequeño.*/
 
 function numeroMenosRepetido(array) {
   let numeroMenosRepetido = array[0]; //guardo un resultado inicial
-  let menorRepeticiones = array.length; //Elementos que hay
+  let menorRepeticiones = array.length; 
 
   for (let i = 0; i < array.length; i++) {
     //recorro cada posicion
-    let vecesMenosRepetido = 0; //guardo las veces que aparece el que estoy mirando
+    let vecesMenosRepetido = 0; //guardo las veces que aparece el numero actual
     for (let j = 0; j < array.length; j++) {
       //recorro todo el array para buscar cuantas veces aparece el numero
-      if (array[i] === array[j]) {
+      if (array[i] === array[j]) { //si el numero actual es igual al numero que estoy comprobando
         //si son iguales incremento las veces qiue aparece
         vecesMenosRepetido++;
       }
