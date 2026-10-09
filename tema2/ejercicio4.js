@@ -4,16 +4,18 @@ un número impar de veces.*/
 function numsImparDeVeces(array) {
   let numerosRep = [];
   for (let i = 0; i < array.length; i++) {
-    let contador;
+    let contador = 0;
     for (let j = 0; j < array.length; j++) {
       if (array[i] === array[j]) {
         contador++;
       }
     }
     if (contador % 2 !== 0) {
-      //comprobar si es impar las veces que sale el numero
-      numerosRep.push(array[i]);
-      //acabar
+      if (!numerosRep.includes(array[i])) {
+        //comprobar si es impar las veces que sale el numero
+        numerosRep.push(array[i]);
+        
+      }
     }
   }
   return numerosRep;
