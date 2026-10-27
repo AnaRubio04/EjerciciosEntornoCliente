@@ -1,23 +1,37 @@
 <!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="libreria.css">
-    <script src="libreria.js" defer type="module"></script>
-  </head>
-  <body>
-    <header>
-      <img src="#" onclick="" />
-      <h1>Librería Comercio</h1>
-    </header>
-    <main>
-        <img/>
-        <input  class="styled" type="button " value="Consultar" id="Consultar"  ><input/>
-        <input type="button " id="idBotonCrear" value="Crear" class="styled" ><input/>
+<html lang="es">
 
-        
-    </main>
-  </body>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Librería Comercio</title>
+  <link rel="stylesheet" href="libreria.css">
+  <script src="libreria.js" defer type="module"></script>
+</head>
+
+<body>
+  <header>
+
+    <img src="logo.png" id="idLogoHome" alt="Logo Comercio" />
+    <h1>Librería Comercio</h1>
+  </header>
+
+  <main>
+    <!-- VISTA HOME -->
+    <section id="vistaHome">
+      <img src="banner.jpg" alt="Librería" />
+      <div class="botones">
+        <a href="consultar.html">
+          <input class="btnConsultar" type="button" value="Consultar" id="Consultar" />
+        </a>
+        <a href="crear.html">
+          <input class="btnCrear" type="button" value="Crear" id="idBotonCrear" />
+        </a>
+      </div>
+    </section>
+
+
+  </main>
+</body>
+
 </html>
