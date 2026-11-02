@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crear libros</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <a href="index.html" rel="noopener noreferrer"><img src="" alt=""></a>
+        <h1>Librería Comercio</h1>
+    </header>
+    <main>
+        <img src="" alt="">
+        <form action="" id="formularioLibro">
+            <label for="titulo">Titulo</label>
+            <input type="text" id="titulo" required>
+            
+            <label for="autor">Nombre autor</label>
+            <input type="text" id="autor" required>
+
+            <label for="paginas">Paginas</label>
+            <input type="number" id="paginas" min="1" required>
+
+            <label for="prestado">Prestado</label>
+            <input type="checkbox" id="prestado">
+
+            <input type="submit" value="Crear">
+        </form>
+        <p id="mensaje"></p>
+        
+        <a href="consultar.html"><input type="button" value="Consultar"></a>
+    </main>
+    <script type="module" defer src="js/Crear.js"></script>
+</body>
+</html>
