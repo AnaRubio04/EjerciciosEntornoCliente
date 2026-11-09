@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cambio divisa</title>
+    <script type="module" src="cambio.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <main class="contenedor">
+        <h1>Cambio de divisas</h1>
+        <section class="conversor">
+            <div>
+                <label for="importe">Importe</label>
+                <input type="text" id="importe" min="0" step="0.01" value="20">
+            </div>
+
+            <div>
+                <label for="origen">De:</label>
+                <select name="" id="origen">
+                    <option value="EUR">Euros</option>
+                    <option value="USD">Dolares</option>
+                    <option value="GBP">Libras</option>
+                </select>
+            </div>
+            <div>
+                <input type="button" id="swap" value="">
+            </div>
+            <div>
+                <label for="destino">A:</label>
+                <select name="" id="destino">
+                    <option value="EUR">Euros</option>
+                    <option value="USD">Dolares</option>
+                    <option value="GBP">Libras</option>
+                </select>
+            </div>
+            <div>
+                <input type="button" id="cambiar" value="Cambiar">
+            </div>
+        </section>
+        <section class="historico">
+            <h2>Histórico</h2>
+            <div id="lista"></div>
+        </section>
+    </main>
+</body>
+</html>

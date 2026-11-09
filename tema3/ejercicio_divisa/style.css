@@ -1,0 +1,12 @@
+#swap{
+    width: 5vw;
+    height: 5vh;
+
+    background-image: url("swap.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+
+    border: none;
+    cursor: pointer;
+}
