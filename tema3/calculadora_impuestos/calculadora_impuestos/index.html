@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Presupuestos impresión 3D</title>
+    <link rel="stylesheet" href="style.css">
+    <script type="module" src="main.js" defer></script>
+</head>
+<body>
+    <main class="contenedor">
+        <h1>Presupuesto</h1>
+        <form id="formulario">
+            <label for="peso">Peso de la pieza (gramos)</label>
+            <input type="number" id="peso" min="1" required>
+
+            <label for="material">Material</label>
+            <select name="material" id="material">
+                <option value="PLA">PLA</option>
+                <option value="PETG">PETG</option>
+                <option value="ABS">ABS</option>
+            </select>
+
+            <label for="calidad">Calidad</label>
+            <select name="calidad" id="calidad">
+                <option value="basica">Básica</option>
+                <option value="normal">Normal</option>
+                <option value="alta">Alta</option>
+            </select>
+
+            <label for="unidades">Número de unidades</label>
+            <input type="number" name="unidades" id="unidades" min="1" value="1" required>
+
+            <div class="checkbox">
+                <label for="urgente">Entrega urgente</label>
+                <input type="checkbox" id="urgente">
+            </div>
+
+            <input type="submit" value="Calcular presupuesto">
+        </form>
+
+        <section class="resultado">
+            <h2>Resultado</h2>
+            <p id="resultado">Introduce los datos para poder calcular el presupuesto</p>
+        </section>
+
+        <section class="historico">
+            <h2>Histórico</h2>
+            <div id="lista">
+                
+            </div>
+        </section>
+    </main>
+</body>
+</html>
