@@ -1,33 +1,36 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Crear Libro</title>
-    <link rel="stylesheet" href="libreria.css" />
-    <script src="libreria.js" defer type="module"></script>
-  </head>
-  <body>
-    <header>
-      <img src="#" onclick="home.html" />
-      <h1>Librería Comercio</h1>
-    </header>
-    <main>
-      <form action="" method="get">
-        <label for="idNombre">Introduce tu nombre </label>
-        <input type="text " id="idNombre" autocomplete="given-name" />
 
-        <label for="idNombreAutor">Introduce el nombre del autor </label>
-        <input type="text " id="idAutor" />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Crear Libro</title>
+  <link rel="stylesheet" href="libreria.css" />
+  <script src="libreria.js" defer type="module"></script>
+</head>
 
-        <label for="idNumPag">Introduce el numero de páginas </label>
-        <input type="text " id="idNumPag" />
+<body>
+  <header>
+    <img src="#" onclick="home.html" />
+    <h1>Librería Comercio</h1>
+  </header>
+  <main>
+    <form id="formulario">
+      <label for="idNombre">Introduce el nombre del libro</label>
+      <input type="text" id="idNombre" required />
 
-        <input type="checkbox" id="prestado" name="RememberPreferences" />
-        <label for="prestado">Prestado</label>
+      <label for="idAutor">Introduce el nombre del autor</label>
+      <input type="text" id="idAutor" required />
 
-        <input class="styled" type="button" value="Crear" />
-      </form>
-    </main>
-  </body>
+      <label for="idNumPag">Introduce el número de páginas</label>
+      <input type="number" id="idNumPag" min="1" required />
+
+      <input type="checkbox" id="prestado" />
+      <label for="prestado">Prestado</label>
+
+      <button type="submit">Crear</button>
+    </form>
+  </main>
+</body>
+
 </html>
