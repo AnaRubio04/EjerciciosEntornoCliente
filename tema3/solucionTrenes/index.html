@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Thomas y sus Amigos - Gestor de Trenes</title>
+
+    <link rel="stylesheet" href="estilos.css">
+
+    <script type="module" src="app.js"></script>
+</head>
+
+<body>
+
+    <header>
+        <h1> Thomas y sus Amigos: Gestor de Trenes</h1>
+    </header>
+
+    <main>
+      
+        <!-- 1. REGISTRO DE TRENES -->
+  
+
+        <section id="registro">
+
+            <h2>Registrar Nuevo Tren</h2>
+
+            <form id="formularioTren">
+
+                <label for="nombre">Nombre:</label>
+
+                <input type="text" id="nombre" placeholder="Introduce el nombre" required>
+
+                <label for="tipo">Tipo:</label>
+
+                <select id="tipo" required>
+
+                    <option value="Vapor">Vapor</option>
+                    <option value="Diésel">Diésel</option>
+                    <option value="Eléctrico">Eléctrico</option>
+                    <option value="Maglev">Maglev</option>
+
+                </select>
+
+                <label for="velocidad">Velocidad máxima (km/h):</label>
+
+                <input type="number" id="velocidad" min="10" max="300" required>
+
+                <button type="submit">Añadir Tren</button>
+
+            </form>
+
+        </section>
+
+        <!-- 2. SIMULADOR DE VIAJES -->
+  
+        <section id="simulador">
+
+            <h2>Simulador de Viajes</h2>
+
+            <label for="origen">Estación Origen:</label>
+
+            <select id="origen">
+            </select>
+
+
+            <label for="destino">Estación Destino:</label>
+
+            <select id="destino">
+            </select>
+
+
+            <label for="trenViaje">Selecciona Tren:</label>
+
+            <select id="trenViaje">
+            </select>
+
+
+            <button type="button" id="botonSimular">
+                Simular Viaje
+            </button>
+
+            <div id="resultadoViaje"></div>
+
+        </section>
+
+
+        <!-- 3. LISTADO DE TRENES -->
+
+        <section id="listado">
+
+            <h2>Listado de Trenes</h2>
+
+            <div class="buscador">
+
+                <input type="text" id="buscar" placeholder="Buscar por nombre o tipo...">
+
+                <button type="button" id="botonBuscar">
+                    Buscar
+                </button>
+
+            </div>
+
+            <div id="listaTrenes"></div>
+
+            <button type="button" id="botonBorrar">
+                Borrar Todos los Trenes
+            </button>
+
+        </section>
+
+    </main>
+
+</body>
+
+</html>

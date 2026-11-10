@@ -1,0 +1,143 @@
+
+/* ==========================================
+   1. ESTILOS GENERALES
+========================================== */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f1f5f4;
+    margin: 0;
+    padding: 20px;
+}
+
+
+/* ==========================================
+   2. CABECERA
+========================================== */
+
+header {
+    text-align: center;
+    color: #c85c5c;
+    margin-bottom: 30px;
+}
+
+
+/* ==========================================
+   3. CONTENIDO PRINCIPAL
+========================================== */
+
+main {
+    max-width: 900px;
+    margin: auto;
+}
+
+section {
+    background-color: white;
+    padding: 25px;
+    margin-bottom: 25px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px #cccccc;
+}
+
+h2 {
+    color: #526b68;
+}
+
+
+/* ==========================================
+   4. FORMULARIOS Y CAMPOS
+========================================== */
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+input,
+select {
+    padding: 10px;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+
+/* ==========================================
+   5. BOTONES
+========================================== */
+
+button {
+    background-color: #c85c5c;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #a94343;
+}
+
+
+/* ==========================================
+   6. LISTADO DE TRENES
+========================================== */
+
+#listaTrenes {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.tarjeta {
+    background-color: #fff8e8;
+    padding: 15px;
+    border: 1px solid #dddddd;
+    border-radius: 8px;
+    white-space: pre-line;
+}
+
+
+/* ==========================================
+   7. BUSCADOR
+========================================== */
+
+.buscador {
+    display: flex;
+    gap: 10px;
+}
+
+.buscador input {
+    flex: 1;
+}
+
+
+/* ==========================================
+   8. RESULTADO DEL VIAJE
+========================================== */
+
+#resultadoViaje {
+    background-color: #fff8e8;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 8px;
+    white-space: pre-line;
+}
+
+.retraso {
+    color: #c0392b;
+    font-weight: bold;
+}
+
+.sinIncidente {
+    color: #27834b;
+    font-weight: bold;
+}
