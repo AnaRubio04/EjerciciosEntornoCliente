@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consultar incidencias</title>
+    <link rel="stylesheet" href="style.css">
+    <script type="module" src="crear.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <h1>Consultar incidencias</h1>
+    </header>
+
+    <main>
+        <section>
+            <h2>Buscar incidencias</h2>
+
+            <label for="busqueda">Buscar:</label>
+            <input type="search" id="busqueda">
+
+            <label for="filtroPrioridad">Prioridad:</label>
+            <select id="filtroPrioridad">
+                <option value="">Todas</option>
+                <option value="baja">Baja</option>
+                <option value="media">Media</option>
+                <option value="alta">Alta</option>
+            </select>
+
+            <label for="filtroEstado">Estado:</label>
+            <select id="filtroEstado">
+                <option value="">Todos</option>
+                <option value="pendiente">Pendiente</option>
+                <option value="en_proceso">En proceso</option>
+                <option value="resuelta">Resuelta</option>
+            </select>
+        </section>
+
+        <section>
+            <h2>Listado de incidencias</h2>
+            <p id="contador"></p>
+            <div id="contenedorIncidencias"></div>
+        </section>
+
+        <a href="crear.html">Crear otra incidencia</a>
+        <br>
+        <a href="index.html">Volver al inicio</a>
+    </main>
+</body>
+
+</html>

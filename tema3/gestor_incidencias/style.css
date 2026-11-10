@@ -1,0 +1,224 @@
+
+/* =====================================
+   ESTILOS GENERALES
+===================================== */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f2f5f9;
+    color: #263445;
+    line-height: 1.6;
+}
+
+/* =====================================
+   CABECERA
+===================================== */
+
+header {
+    background-color: #294c70;
+    color: white;
+    padding: 30px;
+    text-align: center;
+}
+
+header h1 {
+    margin-bottom: 5px;
+    font-size: 28px;
+}
+
+/* =====================================
+   CONTENIDO PRINCIPAL
+===================================== */
+
+main {
+    width: 90%;
+    max-width: 1000px;
+    margin: 35px auto;
+}
+
+/* =====================================
+   SECCIONES
+===================================== */
+
+section {
+    background-color: white;
+    padding: 25px;
+    margin-bottom: 25px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.07);
+}
+
+section h2 {
+    color: #294c70;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #e5edf5;
+    padding-bottom: 10px;
+}
+
+/* =====================================
+   FORMULARIOS
+===================================== */
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+label {
+    font-weight: bold;
+    margin-top: 8px;
+}
+
+input,
+select {
+    width: 100%;
+    padding: 11px;
+    border: 1px solid #ccd5df;
+    border-radius: 6px;
+    font-size: 15px;
+    background-color: white;
+}
+
+input:focus,
+select:focus {
+    outline: none;
+    border-color: #4386bd;
+}
+
+/* =====================================
+   BOTONES
+===================================== */
+
+button,
+input[type="submit"] {
+    background-color: #3478ad;
+    color: white;
+    border: none;
+    padding: 11px 16px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+button:hover,
+input[type="submit"]:hover {
+    background-color: #245b87;
+}
+
+/* Botón de eliminar */
+
+button:last-child {
+    background-color: #d9534f;
+}
+
+button:last-child:hover {
+    background-color: #b83b37;
+}
+
+/* =====================================
+   TARJETAS DE INCIDENCIAS
+===================================== */
+
+#contenedorIncidencias {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+#contenedorIncidencias article {
+    background-color: #f8fafc;
+    border: 1px solid #dce5ee;
+    border-left: 5px solid #4386bd;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+#contenedorIncidencias article h3 {
+    color: #294c70;
+    margin-bottom: 10px;
+}
+
+#contenedorIncidencias article p {
+    margin-bottom: 7px;
+}
+
+/* =====================================
+   FILTROS
+===================================== */
+
+#busqueda,
+#filtroPrioridad,
+#filtroEstado {
+    margin-bottom: 12px;
+}
+
+/* =====================================
+   CONTADOR
+===================================== */
+
+#contador {
+    color: #60758a;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+/* =====================================
+   ENLACES
+===================================== */
+
+a {
+    display: inline-block;
+    color: #3478ad;
+    text-decoration: none;
+    margin: 10px 5px;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* =====================================
+   ESTADÍSTICAS
+===================================== */
+
+#total,
+#pendientes,
+#enProceso,
+#resueltas {
+    font-weight: bold;
+    color: #3478ad;
+    font-size: 18px;
+}
+
+/* =====================================
+   DISEÑO RESPONSIVE
+===================================== */
+
+@media (max-width: 600px) {
+
+    main {
+        width: 95%;
+        margin: 20px auto;
+    }
+
+    section {
+        padding: 18px;
+    }
+
+    header h1 {
+        font-size: 23px;
+    }
+
+    button {
+        width: 100%;
+    }
+}
