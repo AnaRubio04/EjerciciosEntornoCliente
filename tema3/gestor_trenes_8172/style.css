@@ -1,0 +1,77 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #fff8e7;
+}
+
+.contenedor {
+    max-width: 900px;
+    margin: 30px auto;
+    padding: 30px;
+}
+
+h1 {
+    text-align: center;
+    color: #d9534f;
+}
+
+section {
+    margin-bottom: 35px;
+    padding: 25px;
+    background-color: white;
+    border-radius: 10px;
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+input,
+select {
+    margin-top: 5px;
+    margin-bottom: 10px;
+    padding: 8px;
+}
+
+input[type="button"],
+input[type="submit"] {
+    background-color: #d9534f;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+#resultadoViaje {
+    margin-top: 20px;
+    padding: 15px;
+}
+
+#listaTrenes {
+    display: grid;
+    grid-template-columns:
+        repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.tren {
+    border: 1px solid #ddd;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+.tren h3 {
+    color: #d9534f;
+}
+
+.evento {
+    color: #d9534f;
+    font-weight: bold;
+}
